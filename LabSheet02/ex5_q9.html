@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex05 Q9</title>
+  </head>
+  <body>
+    <h1>Array Merge</h1>
+    <button onclick="mergeArrays()">Merge Arrays</button>
+    <p id="result"></p>
+
+    <script>
+      function mergeArrays() {
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+
+        // Merge the two arrays
+        var mergedArray = myGirls.concat(myBoys);
+
+        var result = "Merged Array: " + mergedArray.join(", ");
+
+        document.getElementById("result").textContent = result;
+      }
+    </script>
+  </body>
+</html>

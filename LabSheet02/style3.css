@@ -1,0 +1,25 @@
+body{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 0px 30px 10px 10px;
+    color: #6c757d;
+}
+
+button{
+    margin-top: 10px;
+    background-color: #4c4c4c;
+    border: none;
+    color: white;
+    padding: 10px 78px  ;
+    margin-top: 25px;
+    border-radius: 3px;
+
+}
+
+input{
+    width: 20px;
+}
+
+h3{
+    color: black;
+}

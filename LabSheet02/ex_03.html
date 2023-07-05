@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex03 Q1</title>
+  </head>
+  <body>
+    <script>
+      //Q1
+      let area = areaOfCircle(10);
+      let perimeter = perimeterOfCircle(2);
+
+      function areaOfCircle(r) {
+        return 3.14 * r * r;
+      }
+
+      function perimeterOfCircle(r) {
+        return 2 * 3.14 * r;
+      }
+
+      document.write("Area Of Circle: ", area);
+      document.write("<br>");
+
+      document.write("Perimeter Of Circle: ", perimeter + "<br>");
+
+      //Q2
+      let vol = volumeOfCube(10);
+
+      function volumeOfCube(l) {
+        return l * l * l * l;
+      }
+
+      document.write("Volume Of Cube: ", vol + "<br>");
+
+      //Q3
+      function message() {
+        let s = "hello , welcome to our paradise";
+        alert(s);
+      }
+
+      message();
+    </script>
+  </body>
+</html>

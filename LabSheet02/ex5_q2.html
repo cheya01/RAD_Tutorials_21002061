@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex05 Q2</title>
+  </head>
+  <body>
+    <h1>Fruit Switch Statement</h1>
+    <button onclick="checkFruit('banana')">Check Banana</button>
+    <button onclick="checkFruit('pineapple')">Check Pineapple</button>
+    <button onclick="checkFruit('apple')">Check Apple</button>
+
+    <script>
+      function checkFruit(fruit) {
+        switch (fruit) {
+          case "banana":
+            alert("Yellow");
+            break;
+          case "pineapple":
+            alert("Orange");
+            break;
+          case "apple":
+            alert("Green");
+            break;
+          default:
+            alert("Unknown fruit");
+        }
+      }
+    </script>
+  </body>
+</html>

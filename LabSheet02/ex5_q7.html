@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex05 Q7</title>
+  </head>
+  <body>
+    <h1>Array Operations</h1>
+    <button onclick="performOperations()">Perform Operations</button>
+    <p id="result"></p>
+
+    <script>
+      function performOperations() {
+        const numbers = [80, 30, 40, 50, 23];
+
+        // Change the element in the second index to 78
+        numbers[2] = 78;
+
+        // Find the length of the array
+        var length = numbers.length;
+
+        // Sort the array
+        numbers.sort(function (a, b) {
+          return a - b;
+        });
+
+        var result = "Array after operations:\n";
+        result += "Elements: " + numbers.join(", ") + "\n";
+        result += "Length: " + length + "\n";
+
+        document.getElementById("result").textContent = result;
+      }
+    </script>
+  </body>
+</html>

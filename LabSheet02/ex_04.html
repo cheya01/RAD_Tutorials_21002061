@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex04</title>
+  </head>
+  <body>
+    <h3>question 1</h3>
+    <script>
+      const mammal = {
+        color: "orange",
+        type: "cat",
+        legs: 4,
+        name: "kitty",
+        speed: 24,
+      };
+
+      document.write("Color :", mammal.color + "<br>");
+      document.write("Type :", mammal.type + "<br>");
+      document.write("Legs :", mammal.legs + "<br>");
+      document.write("Name :", mammal.name + "<br>");
+      document.write("Speed :", mammal.speed);
+    </script>
+    <h3>question 2</h3>
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+
+      document.write("First Name : ", person.firstName + "<br>");
+      document.write("Last Name : ", person.lastName + "<br>");
+      document.write("ID Number : ", person.id + "<br>");
+      document.write("Full Name : ", person.fullName() + "<br>");
+    </script>
+    <h3>question 3</h3>
+    <script>
+      const triangle = {
+        Height: 25,
+        base: 24,
+        color: "red",
+        getArea: function () {
+          return triangle.Height * triangle.base * 0.5;
+        },
+      };
+
+      document.write("Height : ", triangle.Height + "<br>");
+      document.write("Base : ", triangle.base + "<br>");
+      document.write("Color : ", triangle.color + "<br>");
+      document.write("Area : ", triangle.getArea() + "<br>");
+    </script>
+  </body>
+</html>

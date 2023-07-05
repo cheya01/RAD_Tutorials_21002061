@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex05 Q10</title>
+  </head>
+  <body>
+    <h1>Array Sum</h1>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="result"></p>
+
+    <script>
+      function calculateSum() {
+        var numbersArray = [1, 13, 22, 123, 49];
+
+        // Calculate the sum of the numbers in the array
+        var sum = numbersArray.reduce(function (a, b) {
+          return a + b;
+        }, 0);
+
+        var result = "Sum: " + sum;
+
+        document.getElementById("result").textContent = result;
+      }
+    </script>
+  </body>
+</html>

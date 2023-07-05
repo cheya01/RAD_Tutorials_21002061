@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex05 Q6</title>
+  </head>
+  <body>
+    <h1>Array Display</h1>
+    <button onclick="displayArray()">Display Array</button>
+    <p id="result"></p>
+
+    <script>
+      function displayArray() {
+        var myArray = ["apple", "banana", "cherry", "date"];
+        var result = "";
+
+        for (var i = 0; i < myArray.length; i++) {
+          result += myArray[i] + " ";
+        }
+
+        document.getElementById("result").textContent = result;
+      }
+    </script>
+  </body>
+</html>

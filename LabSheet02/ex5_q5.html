@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex05 Q5</title>
+  </head>
+  <body>
+    <h1>Odd Number Printer</h1>
+    <button onclick="printOddNumbers()">Print Odd Numbers</button>
+    <p id="result"></p>
+
+    <script>
+      function printOddNumbers() {
+        var result = "";
+        for (var i = 1; i <= 30; i++) {
+          if (i % 2 !== 0) {
+            result += i + " ";
+          }
+        }
+        document.getElementById("result").textContent = result;
+      }
+    </script>
+  </body>
+</html>

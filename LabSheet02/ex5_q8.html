@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex05 Q8</title>
+  </head>
+  <body>
+    <h1>Array Operations</h1>
+    <button onclick="performOperations()">Perform Operations</button>
+    <p id="result"></p>
+
+    <script>
+      function performOperations() {
+        const names = ["sadun", "kamal", "nimal", "ruwan"];
+
+        // Convert the array into a string
+        var namesString = names.join(", ");
+
+        // Remove the last element from the array
+        names.pop();
+
+        // Add a new item called "nuwani"
+        names.push("nuwani");
+
+        var result = "Array after operations:\n";
+        result += "String: " + namesString + "\n";
+        result += "Modified Array: " + names.join(", ");
+
+        document.getElementById("result").textContent = result;
+      }
+    </script>
+  </body>
+</html>
