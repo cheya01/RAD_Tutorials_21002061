@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title User Authentication Example
+  body
+    h1 Welcome
+    if user
+      p Hello, #{user.username}!
+      a(href="/logout") Logout
+    else
+      p Please log in
+      form(action="/login", method="post")
+        input(type="text", name="username", placeholder="Username")
+        input(type="password", name="password", placeholder="Password")
+        input(type="submit", value="Login")
